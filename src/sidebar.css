@@ -1,0 +1,127 @@
+.Sidebar {
+  height: 100%;
+  width: 20vw;
+  background: white;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.Sidebar-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.Sidebar-home-button {
+  align-items: center;
+  background: white;
+  border: 1px solid white;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+}
+
+.Sidebar-medal {
+  height: 6vh;
+}
+
+.Sidebar-avatar {
+  height: 12vh;
+  border: 1px solid white;
+  border-radius: 7.5vh;
+  margin: auto;
+}
+
+.Achievements {
+  font-size: 4vh;
+  line-height: 0%;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.User {
+  color: #4169E1;
+  font-size: large;
+  background-color: white;
+  border: 3px solid #4169E1;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.User-name {
+  font-size: 3vh;
+  line-height: 20%;
+}
+
+.User-role {
+  font-size: 2vh;
+  line-height: 20%;
+}
+
+.Sidebar-body {
+  font-size: 2vh;
+}
+
+.Sidebar-list-inactive {
+  display: none;
+}
+
+.Sidebar-list-active {
+  display: block;
+  list-style-type: none;
+  font-size: 2vh;
+  padding-left: 1.5vw;
+}
+
+.Sidebar-list-button {
+  background: white;
+  border: 1px solid white;
+  font-size: 2vh;
+  text-decoration: none;
+}
+
+.Sidebar-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 1vh;
+  left: 5vw;
+}
+
+.Sidebar-Exit {
+  font-size: 3vh;
+  line-height: 0%;
+  display: flex;
+  align-items: center;
+}
+
+.Sidebar-exit-button {
+  background: white;
+  border: 1px solid white;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25px; 
+}
+
+.Sidebar-exit-button-mouse {
+  background: #d7eef9;
+  border: 1px solid white;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25px; 
+}
+
+.Sidebar-exit-icon {
+  height: 4vh;
+}

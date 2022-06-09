@@ -1,0 +1,191 @@
+.App {
+  background-color: #d7eef9;
+  height: 100vh;
+  font-size: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.App-main-welcome {
+  position: absolute;
+  top: 3vh;
+  left: 22vw;
+  font-size: 3vh;
+  color: #3f5283;
+  line-height: 0%;
+  font-weight: bold;
+}
+
+.App-main-greet {
+  position: absolute;
+  top: 7vh;
+  left: 22vw;
+  font-size: 2vh;
+  color: #9ba7ad;
+}
+
+.App-main-full {
+  position: absolute;
+  top: 13vh;
+  left: 22vw;
+  font-size: 3vh;
+  color: black;
+  background: white;
+  border: 1px solid white;
+  display: block;
+  height: 85vh;
+  width: 76vw;
+  border-radius: 40px;
+  font-weight: bold;  
+  overflow: auto;
+}
+
+.App-main-full-content {
+  position: relative;
+  top: 1vh;
+  left: 2vw;
+  font-size: 3vh;
+  color: black;
+  background: white;
+  border: 1px solid white;
+  display: block;
+  height: 84vh;
+  width: 74vw;
+  border-radius: 40px;
+  font-weight: bold;  
+  text-decoration: none;
+}
+
+.App-main-long {
+  position: absolute;
+  top: 57vh;
+  left: 22vw;
+  font-size: 3vh;
+  color: #819ae5;
+  background: white;
+  border: 1px solid white;
+  display: block;
+  height: 41vh;
+  width: 76vw;
+  border-radius: 40px; 
+  font-weight: bold;
+  overflow: auto;
+}
+
+.App-main-long-content {
+  position: relative;
+  top: 1vh;
+  left: 2vw;
+  font-size: 3vh;
+  color: #819ae5;
+  display: flex;
+  background: white;
+  border: 1px solid white;
+  height: 40vh;
+  width: 74vw;
+  border-radius: 40px; 
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.App-main-top-part {
+  position: absolute;
+  top: 13vh;
+  left: 22vw;
+  font-size: 3vh;
+  color: black;
+  background: white;
+  border: 1px solid white;
+  display: block;
+  height: 41vh;
+  width: 53vw;
+  border-radius: 40px; 
+  font-weight: bold;
+  overflow: auto;
+}
+
+.App-main-top-part-content {
+  position: relative;
+  top: 1vh;
+  left: 2vw;
+  display: flex;
+  font-size: 3vh;
+  color: black;
+  background: white;
+  border: 1px solid white;
+  height: 40vh;
+  width: 51vw;
+  border-radius: 40px; 
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.App-main-square {
+  position: absolute;
+  top: 13vh;
+  left: 77vw;
+  font-size: 3vh;
+  color: #ffa474;
+  background: white;
+  border: 1px solid white;
+  display: block;
+  height: 41vh;
+  width: 21vw;
+  border-radius: 40px;
+  font-weight: bold;
+  overflow: auto;
+}
+
+.App-main-square-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 40vh;
+  width: 19vw;
+  border-radius: 40px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.NewUserButton {
+  align-items: center;
+  background: white;
+  width: 17vw;
+  height: 10vh;
+  font-size: 2vh;
+  display: flex;
+  margin-top: 1vh;
+}
+
+.NewUserAvatar {
+  position: sticky;
+  height: 8vh;
+  border: 1px solid white;
+  border-radius: 4vh;
+}
+
+.NewUserDate {
+  color: grey;
+  font-size: 1.3vh;
+  margin-bottom: 0;
+}
+
+.UserProfile {
+  position: relative;
+  top: 3vh;
+  left: 2vw;
+  align-items: top;
+}
+
+.UserProfile_Avatar {
+  height: 25vh;
+}
+
+.UserProfile_Status {
+  position: sticky;
+  top: 3vh;
+  margin-right: 2vw;
+  font-size: 3vh;
+  color: green;
+}

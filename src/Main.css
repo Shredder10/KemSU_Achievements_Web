@@ -1,0 +1,205 @@
+.List-Element {
+  background: white;
+  border: 1px solid blue;
+  font-size: 3vh;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  margin-left: 1.5vw;
+  margin-bottom: 1vh;
+  text-decoration: none;
+}
+
+.List-Element-Borderless {
+  background: white;
+  font-size: 3vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center; 
+  left: 1.5vw;
+  text-decoration: none; 
+}
+
+.List-Column {
+  background: white;
+  font-size: 3vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; 
+  text-decoration: none;
+}
+
+.List-String {
+  background: white;
+  font-size: 3vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  text-decoration: none;
+}
+
+.Error-text {
+  color: #FF0000;
+  font-size: 2vh;
+  text-decoration: none;
+}
+
+.Success-text {
+  color: #00FF00;
+  font-size: 2vh;
+  text-decoration: none;
+}
+
+.Button {
+  margin-left: 1.5vw;
+  height: 7vh;
+  width: 13vw;
+  color: #4169E1;
+  font-size: large;
+  background-color: white;
+  border: 3px solid #4169E1;
+  border-radius: 15px;
+  margin-top: 5px;
+  text-decoration: none;
+}
+
+.Input {
+  width: 20vw;
+  height: 3.5vh;
+  font-size: large;
+  border: 3px solid #4169E1;
+  border-radius: 15px;
+  margin-left: 1.5vw; 
+  margin-top: 5px;
+  text-decoration: none;
+}
+
+.Select {
+  height: 3.5vh;
+  width: 10vw;
+  color: #4169E1;
+  font-size: large;
+  border: 3px solid #4169E1;
+  border-radius: 15px;
+  margin-left: 1.5vw; 
+  margin-top: 5px;
+  text-decoration: none;
+}
+
+.Header {
+  color: #3f5283;
+  font-size: 5vh;
+  margin-bottom: 0vh;
+  margin-top: 0.5vh;
+  margin-left: 4vw;
+  text-decoration: none;
+}
+
+.Header-Main {
+  position: relative;
+  top: 1vh;
+  left: 2vw;
+  background: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: 0px;
+  font-weight: bold;
+  margin-bottom: 1.5vh;
+}
+
+.Header-Orange {
+  color: #ffa474;
+  position: relative;
+  display: flex;
+  font-size: 3vh;
+  text-decoration: none;
+}
+
+.Header-Black {
+  color: #black;
+  position: relative;
+  display: flex;
+  font-size: 3vh;
+  text-decoration: none;
+}
+
+.Header-Blue {
+  color: #819ae5;
+  position: relative;
+  display: flex;
+  font-size: 3vh;
+  text-decoration: none;
+}
+
+.Name {
+  color: #4169E1;
+  font-size: 4vh;
+  margin-top: 1vh;
+  display: flex;
+  align-items: center;
+  margin-left: 1.5vw;
+  text-decoration: none;
+}
+
+.Comment {
+  color: #4169E1;
+  font-size: 1.5vh;
+  display: flex;
+  align-items: center;
+  margin-left: 1.5vw;
+  margin-top: 0;
+  text-decoration: none;
+}
+
+.Checkbox {
+  height: 2vh;
+  border: 2px solid #4169E1;
+  border-radius: 2px;
+  margin-left: 1.5vw;
+  text-decoration: none; 
+}
+
+.Modal {
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0);
+}
+
+.Modal.Active {
+  transform: scale(1);
+}
+
+.ModalContent {
+  padding: 20px;
+  border-radius: 12px;
+  background: white;
+  width: 47vw;
+  border: 2px solid blue;
+  font-size: 2.5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;  
+}
+
+.ModalContent.Small {
+  height: 22vh;  
+}
+
+.ModalContent.Big {
+  height: 40vh;  
+}
+
+.ModalContent.Ban {
+  height: 55vh;  
+}
