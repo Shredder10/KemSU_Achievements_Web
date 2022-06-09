@@ -36,8 +36,7 @@ function StudentsListView() {
   const [currSubStr, setcurrSubStr] = useState('');
   const [currentRole, setcurrentRole] = useState('');
   const [currentStatus, setcurrentStatus] = useState('');
-  const [currentFiltId, setcurrentFiltId] = useState('');
-  const [currentFiltName, setcurrentFiltName] = useState('');
+  const [currentFilt, setcurrentFilt] = useState('');
   const [currInstId, setcurrInstId] = useState('');
   const [currStreamId, setcurrStreamId] = useState('');
 
@@ -92,27 +91,28 @@ function StudentsListView() {
       case "t": {
         if(FilterId[1]!=="") {setcurrentStatus(FilterId.substring(1)); break;}
       }
-      case "I": {setcurrentFiltId(FilterId.substring(1)); setcurrentFiltName("Институт"); break;}
+      case "I": {setcurrentFilt(FilterId.substring(1)+"_Институт"); break;}
       case "S": {
-        if(FilterId[1]!=="") {setcurrentFiltId(FilterId.substring(1)); setcurrentFiltName("Направление"); break;}
-        else {setcurrentFiltId(currInstId); setcurrentFiltName("Институт"); break;}
+        if(FilterId[1]!=="") {setcurrentFilt(FilterId.substring(1)+"_Направление"); break;}
+        else {setcurrentFilt(currInstId+"_Институт"); break;}
       }
       case "G": {
-        if(FilterId[1]!=="") {setcurrentFiltId(FilterId.substring(1)); setcurrentFiltName("Группа"); break;}
-        else {setcurrentFiltId(currStreamId); setcurrentFiltName("Направление"); break;}
+        if(FilterId[1]!=="") {setcurrentFilt(FilterId.substring(1)+"_Группа"); break;}
+        else {setcurrentFilt(currStreamId+"_Направление"); break;}
       }
       default: 
-        currSubStr=FilterId;
+        setcurrSubStr(FilterId);
     } 
   }
   
   useEffect(async () => {
         async function fetchData() {
-        let JSON=await GetStudents(currSubStr, currentFiltId, currentFiltName, currentStatus);
+        let div = currentFilt.indexOf("_");
+        let JSON=await GetStudents(currSubStr, currentFilt.slice(0, div), currentFilt.substring(div+1), currentStatus);
         setStudents(JSON);
     };
     await fetchData();
-  }, [currSubStr, currentFiltId, currentStatus]);
+  }, [currSubStr, currentFilt, currentStatus]);
   
   
   

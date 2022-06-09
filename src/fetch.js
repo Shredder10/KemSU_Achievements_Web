@@ -187,15 +187,15 @@ async function GetUserList(currSubStr, currentRole, currentStatus){
   if(currSubStr!=="" && currSubStr!=undefined)
     {URL=URL+"?substring="+currSubStr;
       if(currentRole!=="" && currentRole!=undefined) URL=URL+"&roleId="+currentRole;
-      if(currentStatus!=="" && currentStatus!=undefined) URL=URL+"&statusId="+currentStatus;
+      if(currentStatus!=="" && currentStatus!=undefined) URL=URL+"&statusUserId="+currentStatus;
     }
   else {
       if(currentRole!=="" && currentRole!=undefined) {
         URL=URL+"?roleId="+currentRole;
-        if(currentStatus!=="" && currentStatus!=undefined) URL=URL+"&statusId="+currentStatus;
+        if(currentStatus!=="" && currentStatus!=undefined) URL=URL+"&statusUserId="+currentStatus;
       }
       else
-        if(currentStatus!=="" && currentStatus!=undefined) URL=URL+"?statusId="+currentStatus;
+        if(currentStatus!=="" && currentStatus!=undefined) URL=URL+"?statusUserId="+currentStatus;
   }  
   console.log(URL);
   let response=await fetch(URL, {
@@ -625,15 +625,15 @@ async function GetStudents(currSubStr, currentFiltId, currentFiltName, currentSt
     if(currSubStr!=="" && currSubStr!=undefined) 
       {data=data+"?substring="+currSubStr;
         if(currentFiltId!=="" && currentFiltId!=undefined) data=data+"&filterId="+currentFiltId+"&filterName="+currentFiltName;
-        if(currentStatus!=="" && currentStatus!=undefined) data=data+"&statusId="+currentStatus;
+        if(currentStatus!=="" && currentStatus!=undefined) data=data+"&statusUserId="+currentStatus;
       }
     else {
       if(currentFiltId!=="" && currentFiltId!=undefined) {
         data=data+"?filterId="+currentFiltId+"&filterName="+currentFiltName;
-        if(currentStatus!=="" && currentStatus!=undefined) data=data+"&statusId="+currentStatus;
+        if(currentStatus!=="" && currentStatus!=undefined) data=data+"&statusUserId="+currentStatus;
       }
       else
-        if(currentStatus!=="" && currentStatus!=undefined) data=data+"?statusId="+currentStatus;  
+        if(currentStatus!=="" && currentStatus!=undefined) data=data+"?statusUserId="+currentStatus;  
     } 
 
     let url;
